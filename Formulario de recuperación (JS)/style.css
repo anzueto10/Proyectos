@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merienda:wght@300&family=Mukta:wght@200&family=Nunito:wght@200&family=Quicksand:wght@300&family=Raleway:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merienda:wght@300&family=Montserrat:wght@100&family=Mukta:wght@200&family=Nunito:wght@200&family=Quicksand:wght@300&family=Raleway:wght@100;300&family=Ysabeau:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merienda:wght@300&family=Montserrat:wght@100&family=Nunito:wght@200&family=Poppins:wght@300&family=Quicksand:wght@300&family=Raleway:wght@100;300&family=Ysabeau:wght@100&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#div{
+    width: 100%;
+    height: 98%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(44, 213, 255), rgb(120, 17, 255));
+    padding-bottom: 1%;
+}
+
+header{
+    color: rgb(255, 255, 255);
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 2px 5px rgb(255, 255, 255)
+}
+
+header h1{
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+
+header p{
+    font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ysabeau', sans-serif;
+font-size: 1em;
+font-weight: bold;
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+
+.datosos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 15px;
+}
+
+.datosos h3{
+    font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ysabeau', sans-serif;
+font-size: 1.3em;
+}
+
+.formularioPrincipal{
+    box-shadow: 0 0 10px 2px #fffdfd;
+    color: white;
+    border: 5px solid white;
+    padding-top:2%;
+    padding-right:5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    background-color: transparent;
+    border-radius: 25px;
+    height: 95%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.DatosDelAlumne{
+    gap: 6em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width:100%;
+    height: 50%;
+}
+
+.botonCarrera{
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 15em;
+    height: 3em;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ysabeau', sans-serif;
+font-size: 1.5em;
+transition: 0.5s;
+}
+
+.botonCarrera:hover{
+    box-shadow: 0 0px 5px 2px rgb(255, 255, 255)
+}
+
+.botonCarrera:focus{
+    outline: none;
+}
+
+.car{
+    display: none;
+}
+
+.artcarrera{
+    position: absolute;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.eleccion{
+    position:fixed;
+	top:0;
+	left:0;
+	background: rgba(0, 0, 0, .5);
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(1);
+	overflow: hidden;
+  
+}
+
+.eleccion img{
+    transition: 0.5s;
+    width: 80%;
+    height: 80%;
+    
+}
+
+.eleccion img:hover{
+    filter: blur(2px);
+    border-radius: 20px;
+}
+
+.eleccion h3{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ysabeau', sans-serif;
+}
+
+.back{
+    position: absolute;
+    left: 90%;
+    font-size: 5em;
+    color: white;
+    bottom: 80%;
+    z-index: 2000;
+}
+
+.backAnimation{
+    animation-name: atras;
+    cursor: pointer;
+    animation-duration: 0.5s;
+    transition: all ease-in-out;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes atras{
+    50%{
+        left: 89%;
+    }
+
+    100%{
+        left: 90%;
+    }
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    z-index:8;
+    color: white;
+    font-size: 1.2em;
+}
+
+input:focus{
+    outline: none;
+}
+
+.inputbox{
+    position: relative;
+    width: 80%;
+    border-bottom: 2px solid #fff;
+    z-index: 5;
+    height: 10%;;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 0em;
+    left: 0%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ysabeau', sans-serif;
+}
+
+.DatosDelAlumne .subir{
+    top: -2em;
+}
+
+.bot{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot input{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.art1{
+    height: 5%;
+}
+
+.art2{
+    height: 12%;;
+}
+
+.cargar{
+    display: none;
+}
+
+.loading{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    animation-duration: 0.8s;
+    transition: all ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: cargar;
+}
+
+.loading::after{
+    border: .5em solid transparent;
+    border-top-color: rgb(120, 17, 255);
+    border-left-color: rgb(120, 17, 255);
+    border-right-color: rgb(120, 17, 255);
+    content: '';  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background: transparent;
+}
+
+@keyframes cargar {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.cargando{
+    position:fixed;
+	top:0;
+	left:0;
+	background: rgba(0, 0, 0, .5);
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transform: scale(1);
+    overflow: hidden;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+}
+
+.seenvio{
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-size: 5em;
+}
+
+.cargarr{
+    display: none;
+}
+
+.aparece{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+.cargars{
+    display: none;
+}
+
+.send{
+    font-size: 5em;
+    color: #fff;
+    position: absolute;
+    left: 20%;
+    animation-name: sends;
+    animation-duration: 3.5s;
+    transition: all ease-in-out;
+}
+
+@keyframes sends {
+    100%{
+        left: 80%;
+    }
+}

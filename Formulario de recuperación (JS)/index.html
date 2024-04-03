@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Problema</title>
+</head>
+<body>
+    <div id="div">
+        <header>
+                <section>
+                    <h1>Bienvenido al formulario de recuperación</h1>
+                </section>
+                <section>
+                    <p>Llene los datos que se le solicitan para poder aplicar a una recuperación</p>
+                </section>
+        </header>
+        <main>
+            <article class="datosos">
+                <form class="formularioPrincipal" action=""> 
+                    <article class="art1">
+                        <h3>Complete los siguientes datos:</h3>
+                    </article>
+                    <article class="art2">
+                        <button type="button" class="botonCarrera">ELIGA SU CARRERA<ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </article>
+                    <article class="DatosDelAlumne">          
+                            <section class="inputbox">
+                                <input type="text" class="input nombre inputnombre"  minlength="5" maxlength="30" required>
+                                <label for="nombre" class="labelInput labelNombre">Ingrese sus nombres</label>
+                            </section>
+                            
+                            <section class="inputbox">
+                                <input type="text" class="input inputnombre apellido" minlength="5" maxlength="30" required>
+                                <label for="apellido" class="labelInput labelApellido" >Ingrese sus apellidos</label>
+                            </section>
+
+                            <section class="inputbox">
+                                <input type="email" class="input mail" required>
+                                <label for="mail" class="labelMail">Ingrese su correo electrónico</label>
+                            </section>
+                    </article>
+
+                    <article class="bot">
+                        <input type="submit" name="Enviar" value="Enviar Datos" class="validar">
+                    </article>
+                </form>
+            </article>
+        </main>
+    </div>
+
+    <div class="car">
+        <article>
+            <ion-icon name="arrow-undo-outline" class="back"></ion-icon>
+        </article>
+        <article class="artcarrera">
+            <section class="claseElegida">
+                <img src="img/arq.jpg" alt="arq">
+                <h3>ARQUITECTURA</h3>
+            </section>
+                
+            <section class="claseElegida">
+                <img src="img/ies.jpeg" alt="ieg">
+                <h3>INGENIERÍA EN SISTEMAS</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/ies.jpg" alt="ies">
+                <h3>INGENERÍA EN SONIDO</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/psicologia.jpg" alt="pg">
+                <h3>PSICOLOGÍA</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/ii.jpg" alt="ii">
+                <h3>INGENIERÍA INDUSTRIAL</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/hyt.jpg" alt="hyt">
+                <h3>HOTELERÍA Y TURISMO</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/mdc.jpg" alt="mdc">
+                <h3>MEDICINA</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/cdlc.jpg" alt="cdlc">
+                <h3>CIENCIAS DE LA COMUNICACIÓN</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/ade.jpg" alt="ade">
+                <h3>ADMINISTRACIÓN DE EMPRESAS</h3>
+            </section>
+    
+            <section class="claseElegida">
+                <img src="img/pdg.jpg" alt="pdgg">
+                <h3>PEDAGOGÍA</h3>
+            </section> 
+        </article>
+    </div>
+
+    <div class="cargar">
+        <span class="loading"></span>
+        <article class="cargarr">
+            <h2 class="seenvio">
+                SU FORMULARIO SE ENVÍO CON ÉXITO
+            </h2>
+            <section>
+                <ion-icon name="send-outline" class="send"></ion-icon>
+            </section>
+        </article>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
